@@ -64,7 +64,7 @@ $mail->From = $email;
 $mail->FromName = $name;
 
 //To address and name
-$mail->addAddress("ianbutler82@yahoo.co.uk", "Ian Butler");
+$mail->addAddress("greg@wilnaudesign.com", "Greg Wilnau");
 
 //Address to which recipient will reply
 $mail->addReplyTo($email, "Reply");
