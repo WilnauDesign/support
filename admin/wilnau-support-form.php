@@ -8,7 +8,7 @@ function wilnau_support() { ?>
     <h4>Do you have questions or need help?</h4> 
     <p>Contact Wilnau Design and we will address your problem.</p>
     <p>Please be as descriptive as possible if you're encountering an issue.</p>
-    <p>If you're having issues with this form, please email <a href="mailto:greg@wilnaudesign.com">greg@wilnaudesign.com</a></p>
+    <p>If you're having issues with this form, please email <a href="mailto:support@wilnaudesign.com">support@wilnaudesign.com</a></p>
     <fieldset>
       <input placeholder="Your Name" name="your_name" type="text" tabindex="1" required autofocus>
     </fieldset>
@@ -34,7 +34,7 @@ function wilnau_support() { ?>
 function my_error_notice() {
     ?>
     <div class="error notice">
-        <p><?php _e( 'There has been an error with the form submission. Please email <a href="mailto:greg@wilnaudesign.com">greg@wilnaudesign.com</a>', 'my_plugin_textdomain' ); ?></p>
+        <p><?php _e( 'There has been an error with the form submission. Please email <a href="mailto:support@wilnaudesign.com">support@wilnaudesign.com</a>', 'my_plugin_textdomain' ); ?></p>
     </div>
     <?php
 }
@@ -64,7 +64,7 @@ $mail->From = $email;
 $mail->FromName = $name;
 
 //To address and name
-$mail->addAddress("greg@wilnaudesign.com", "Greg Wilnau");
+$mail->addAddress("support@wilnaudesign.com", "Greg Wilnau");
 
 //Address to which recipient will reply
 $mail->addReplyTo($email, "Reply");
