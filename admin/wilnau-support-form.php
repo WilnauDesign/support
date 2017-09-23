@@ -61,7 +61,7 @@ if (isset($_POST['your_message'])) {
     $message = $_POST['your_message'];
 }
 if (isset($_POST['your_url'])) {
-    $url = $_POST['your_url']
+    $url = $_POST['your_url'];
 }
 $body = $name . '<br><br>' . $url . '<br><br>' . $message;
 
