@@ -51,10 +51,18 @@ require(dirname(__FILE__) . "/includes/phpmailer/PHPMailerAutoload.php");
 
 if(isset($_POST['submit'])) {
 
-$email = $_POST['your_email'];
-$name = $_POST['your_name'];
-$message = $_POST['your_message'];
-$url = $_POST['your_url'];
+if (isset($_POST['your_email'])) {
+    $email = $_POST['your_email'];
+}
+if (isset($_POST['your_name'])) {
+    $name = $_POST['your_name'];
+}
+if (isset($_POST['your_message'])) {
+    $message = $_POST['your_message'];
+}
+if (isset($_POST['your_url'])) {
+    $url = $_POST['your_url']
+}
 $body = $name . '<br><br>' . $url . '<br><br>' . $message;
 
 $mail = new PHPMailer;
